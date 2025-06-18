@@ -7,15 +7,20 @@
   <style>
     body {
       font-family: Verdana, sans-serif;
-      background-image: url('ESPANOL (1).png');
+      background-image: url('Untitled design (12).png');
       background-size: cover;
       background-attachment: fixed;
-      margin: 2;
-      color: #000;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      color: #fff; 
+      position: relative;
     }
+
     header {
       background-color: #2641CA;
-      background-image: url('Untitled design (2).png');
+      background-image: url('Untitled design (11).png');
       background-size: cover;
       margin: 0;
       color: white;
@@ -53,7 +58,7 @@
       display: block;
     }
     .language-menu {
-      background-color: #f4b17e;
+      background-color: #2641CA;
       color: white;
       text-align: center;
       padding: 8px 20px;
@@ -61,7 +66,7 @@
     }
     .language-menu span {
       margin-left: 15px;
-      cursor: not-allowed;
+      text-color: #000;
       opacity: 0.7;
     }
     .language-menu span.active {
@@ -71,28 +76,17 @@
       opacity: 1;
     }
     .scrolling-banner {
-      width: 100%;
       overflow: hidden;
+      white-space: nowrap;
+      background: #2641CA;
+      height: 150px;
       position: relative;
-      height: 150px;
-      background: white;
     }
-
-
-    .scrolling-banner .inner {
-      display: flex;
-      width: max-content;
-      animation: scroll-horizontal 20s linear infinite;
-    }
-
-
     .scrolling-banner img {
+      display: inline-block;
       height: 150px;
-      width: auto;
-      flex-shrink: 0;
+      animation: scroll-horizontal 40s linear infinite;
     }
-
-
     @keyframes scroll-horizontal {
       0% {
         transform: translateX(0%);
@@ -101,7 +95,6 @@
         transform: translateX(-50%);
       }
     }
- }
     a:link {
       color: white;
       background-color: transparent;
